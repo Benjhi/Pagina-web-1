@@ -48,13 +48,20 @@ ul {
 
 .nav-main ul li{
     padding: 30px;
+    position:relative;
+    float:left;
+    margin:0;
+    background-color: #2f3640;
 }
 
 .nav-main ul li a{
     padding: 2px;
 }
+
 .nav-main ul li a:hover {
     border-bottom: 2px solid cornsilk ;
+    text-transform:uppercase;
+    letter-spacing:1px;
 }
 
 .nav-main ul.nav-menu {
@@ -70,6 +77,37 @@ ul {
     z-index: 2;
     font-size: 1.5rem;
     display: none;
+}
+
+/* menu desplegable */
+
+.nav-main ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#eee;
+    padding:0;
+   }
+   
+   /* items del menu desplegable */
+   
+.nav-main ul ul li {
+    float:none;
+    width:150px
+   }
+   
+   /* enlaces de los items del menu desplegable */
+   
+.nav-main ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+}
+   
+   /* items del menu desplegable al pasar el ratón */
+   
+ .nav-main ul li:hover > ul {
+    display:block;
 }
 
 /* SHOWCASE*/
@@ -147,7 +185,7 @@ hr {
 /*CARDS BANNER ONE*/
 .cards-banner-one{
     width: 100%;
-    height: 350px;
+    height: 450px;
     background: url(imagenes/icono2.jpg);
     margin-bottom: 40px;
     display: flex;
@@ -164,7 +202,7 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    font-size: larger;
+    font-size: large;
 }
 
 .cards-banner-one p,
@@ -175,6 +213,7 @@ hr {
 /* SOCIAL */
 .social{
     margin 50px;
+    background-color: #2f3640;
 }
 
 .social p{
@@ -198,6 +237,10 @@ hr {
 
 }
 
+iframe {
+    margin: 0 600px 0;
+}
+
 @media (max-width: 700px) {
 
     .menu-btn {
@@ -206,7 +249,7 @@ hr {
 
     .nav-main ul.nav-menu {
         display: block;
-        position: absolute;
+        position: relative;
         top: 0;
         left: 0;
         background: #2f3640;
@@ -226,7 +269,6 @@ hr {
         font-size: 14px;
     }
 
-
     .nav-main ul.nav-menu-right {
         margin-right: 50px;
     }
@@ -237,6 +279,11 @@ hr {
 
     .cards-banner-one .content{
         width: 80%;
+    }
+
+    iframe {
+        margin: 0;
+       
     }
 
     @media (max-width: 500px) {
@@ -251,5 +298,13 @@ hr {
         .cards-banner-one .content {
             width: 100%;
             padding: 60px 20px;
+        }
+
+        .nav-menu-right li a{
+            width: 30%;
+        }
+
+        iframe {
+            width: 100%;
         }
 }
