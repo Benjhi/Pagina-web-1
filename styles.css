@@ -253,7 +253,7 @@ iframe {
         top: 0;
         left: 0;
         background: #2f3640;
-        height: 30%;
+        height: 35%;
         width: 80%;
         transform: translateX(-800px);
         padding: 30px;
@@ -263,6 +263,10 @@ iframe {
 
     .nav-menu-right li a i{
         display: none;
+    }
+
+    .nav-main ul li a {
+        padding: -7px;
     }
 
     .nav-main ul.nav-menu-right{
@@ -275,9 +279,9 @@ iframe {
 
     .nav-main ul.nav-menu li{
         padding: 22px;
-        font-size: 11px;
-        width: 35px;
-        height: 20px;
+        font-size: 14px;
+        width: 34px;
+        height: 38px;
     }
 
     .nav-main ul.nav-menu-right {
@@ -299,6 +303,11 @@ iframe {
 
     .nav-main ul li a:hover {
         display: none;
+    }
+
+    .nav-main ul ul a{
+        line-height: 120%;
+    padding: 10px 3px;
     }
 
     @media (max-width: 500px) {
