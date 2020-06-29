@@ -266,7 +266,12 @@ iframe {
     }
 
     .nav-main ul li a {
-        padding: -7px;
+        padding: 0px;
+    }
+
+    .nav-main ul ul a {
+        line-height: 120%;
+        padding: 15px 0px;
     }
 
     .nav-main ul.nav-menu-right{
@@ -279,9 +284,9 @@ iframe {
 
     .nav-main ul.nav-menu li{
         padding: 22px;
-        font-size: 14px;
-        width: 34px;
-        height: 38px;
+        font-size: 13px;
+        width: 35px;
+        height: 36px;
     }
 
     .nav-main ul.nav-menu-right {
