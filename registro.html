@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desarrollo De Software</title>
+        <!--FONT AWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+        <!--FONT OSWALD-->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+        <!--CUSTOM CSS-->
+        <link rel="stylesheet" href="styles.css">
+        <!--Latest compiled and minified CSS -->
+    
+    </head>
+    <script src='main.js'></script>
+
+    <body onload="document.registration.userid.focus();">
+        <h1>Formulario de registro</h1>
+        Use las teclas de tabulación para moverse de un campo de entrada al siguiente.
+        <form name='registration' onSubmit="return formValidation();">
+        <ul>
+        <li><label for="userid">Nombre de usuario:</label></li>
+        <li><input type="text" name="userid" size="15" /></li>
+        <li><label for="passid">Contraseña:</label></li>
+        <li><input type="password" name="passid" size="15" /></li>
+        <li><label for="address">Pais:</label></li>
+        <li><input type="text" name="address" size="20" /></li>
+        <li><label for="email">Email:</label></li>
+        <li><input type="text" name="email" size="50" /></li>
+        <li><label id="gender">Sexo:</label></li>
+        <li><input type="radio" name="msex" value="Masculino" /><span>Masculino</span></li>
+        <li><input type="radio" name="fsex" value="Femenino" /><span>Femenino</span></li>
+        <input type="submit" name="registrar" value="Registrar" for="Submit"/>
+        </ul>
+        </form>
+        </body>
+</head>
+<body>
+    
+</body>
+</html>
